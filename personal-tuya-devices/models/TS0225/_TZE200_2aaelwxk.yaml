@@ -1,0 +1,33 @@
+deviceLabel: Presence Sensor
+profiles:
+  - normal_presenceSensor_v1
+datapoints:
+  # https://github.com/Koenkk/zigbee-herdsman-converters/blob/b930eeec4761370e4202d2c483f720eec5381f7f/src/devices/tuya.ts#L4825
+  - id: 1
+    command: presenceSensor
+    base:
+      group: 1
+  - id: 2
+    command: value
+    base:
+      group: 2
+      name: sensitivity
+  - id: 104
+    command: value
+    base:
+      group: 3
+      name: near_detection
+  - id: 4
+    command: value
+    base:
+      group: 4
+      name: far_detection
+  - id: 102
+    command: value
+    base:
+      group: 6
+      name: fading_time
+  - id: 106
+    command: illuminanceMeasurementRaw
+    base:
+      group: 1
